@@ -11,5 +11,17 @@ resources:
      trigger: true
 
 steps:
-- script: echo Pipeline details '$(resources.pipeline.pipeline1.runID)'!
+- script: |
+    echo Pipeline details '$(resources.pipeline.pipeline1.projectName)'
+    echo Pipeline details '$(resources.pipeline.pipeline1.projectID)'
+    echo Pipeline details '$(resources.pipeline.pipeline1.pipelineName)'
+    echo Pipeline details '$(resources.pipeline.pipeline1.pipelineID)'
+    echo Pipeline details '$(resources.pipeline.pipeline1.runName)'
+    echo Pipeline details '$(resources.pipeline.pipeline1.runID)'
+    echo Pipeline details '$(resources.pipeline.pipeline1.runURI)'
+    echo Pipeline details '$(resources.pipeline.pipeline1.sourceBranch)'
+    echo Pipeline details '$(resources.pipeline.pipeline1.sourceCommit)'
+    echo Pipeline details '$(resources.pipeline.pipeline1.sourceProvider)'
+    echo Pipeline details '$(resources.pipeline.pipeline1.requestedFor)'
+    echo Pipeline details '$(resources.pipeline.pipeline1.requestedForID)'
   displayName: 'Run a one-line script'
