@@ -11,5 +11,5 @@ resources:
      trigger: true
 
 steps:
-- script: echo Pipeline details '$(resources.pipeline.pipeline1.pipelineID)'!
+- script: echo Pipeline details '$(resources.pipeline.pipeline1.runID)'!
   displayName: 'Run a one-line script'
