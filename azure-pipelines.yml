@@ -17,10 +17,5 @@ resources:
      trigger: true
 
 steps:
-- script: echo Hello, world!
+- script: echo Pipeline details '${{ resources.pipeline.mySourcePipeline.pipelineID }}'
   displayName: 'Run a one-line script'
-
-- script: |
-    echo Pipeline details '${{ resources.pipeline.mySourcePipeline.pipelineID }}'
-  displayName: 'Run a multi-line script'
-
