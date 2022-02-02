@@ -20,7 +20,7 @@ steps:
 
 resources:
  pipelines:
-   - pipeline: azure-devops-test2
-     source: azure-devops-test2
+   - pipeline: shubhamkarnwal.azure-devops-test2
+     source: shubhamkarnwal.azure-devops-test2
      project: shubhamkarnwal
      trigger: true
