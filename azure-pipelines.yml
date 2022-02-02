@@ -9,18 +9,18 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-
 resources:
  pipelines:
    - pipeline: shubhamkarnwal.azure-devops-test2
      source: shubhamkarnwal.azure-devops-test2
      project: shubhamkarnwal
      trigger: true
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo 'Pipeline details ${{ resources.pipeline.mySourcePipeline.pipelineID }}'
+  displayName: 'Run a multi-line script'
+
