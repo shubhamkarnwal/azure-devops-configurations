@@ -24,4 +24,5 @@ steps:
     echo Pipeline details '$(resources.pipeline.pipeline1.sourceProvider)'
     echo Pipeline details '$(resources.pipeline.pipeline1.requestedFor)'
     echo Pipeline details '$(resources.pipeline.pipeline1.requestedForID)'
+    echo Pipeline details '$(resources.pipeline.pipeline1.temp)'
   displayName: 'Run a one-line script'
