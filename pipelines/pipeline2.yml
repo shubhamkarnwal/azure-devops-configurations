@@ -6,9 +6,8 @@ pool:
 
 resources:
  pipelines:
-   - pipeline: mySourcePipeline
-     source: shubhamkarnwal.azure-devops-test2
-     project: shubhamkarnwal
+   - pipeline: mySourceTriggerPipeline
+     source: shubhamkarnwal.azure-devops-test1
      trigger: true
 
 steps:
